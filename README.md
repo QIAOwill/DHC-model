@@ -11,5 +11,8 @@
 - **Time series data** `[ OD Series.txt ]`: The intercity mobility flow between each city pair during 2023.01.01-2023.10.06 are recorded in detail.  
 - **City attribute data** `[ data_Attribute.txt ]`: The result of city attribute data normalization.  
 - **Train data** `[ Time Data.txt ]`: Time series data result after **normalization**.
-`[ PCA.txt ]`: 
-`[ predict(MinMax).txt ]`: 
+- **Trend feature**`[ PCA.txt ]`: ***Trend Feature Extraction (green part)*** results.  
+- **Holiday features**`[ predict(MinMax).txt ]`: The result of HFF part.  
+
+### Packages Preparation for DTS
+- Some Python packages need to be installed before running the code, such as **statsmodels, numba, pandas, torchsummary**(the code contains instructions to install these packages automatically). The **mmcv** can use "`pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1/index.html`" to install.
