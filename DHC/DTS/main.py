@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     for i in range(len(data_range_list)):
         #param_dict = get_data_source(data_set[0], Machine_list[0])
-        param_dict = get_data_source(data_set[1], Machine_list[0], 
+        param_dict = get_data_source(data_set[1], Machine_list[1], 
                                     data_range_list[i], param_dict)
 
         params = list_of_param_dicts(param_dict)

@@ -8,7 +8,7 @@ import pandas as pd
 def main(run_name, precict_day = 7, citys_range = None,
         data_path = './Result/data.txt',
         predict_path = './Result/predict.txt',
-        od_path = r'D:\SEU-all\Self Works\Prediction\Data\OD Series\OD Series.txt'):
+        od_path = 'change your data path'):
     """
     对多变量的时间序列进行循环预测;
 
@@ -58,6 +58,8 @@ if __name__ == "__main__":
 
     namelist = ['NPXGB', 'Prophet']
     precict_day = 8
+    # 选择训练数据维度
     citys_range = None
 
-    main(namelist[1], precict_day = precict_day, citys_range = citys_range)
+    main(namelist[1], precict_day = precict_day, citys_range = citys_range,
+         od_path='./OD Series.txt')

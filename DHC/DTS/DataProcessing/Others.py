@@ -20,11 +20,11 @@ def get_data_source(data_type, Machine, data_range, param_dict:dict):
         string = ''
 
     if Machine == 'QIAO-PC':
-        head_path = '../'
+        head_path = './'
         os.system('cls')
 
     elif Machine == 'Web-Sever':
-        head_path = '/data/SPDA/'
+        head_path = '/data/coding/DHC/DTS/'
         os.system('clear')
 
     data_path = head_path + 'Data/Time Data%s.txt'%string
